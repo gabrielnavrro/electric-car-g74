@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivian</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo-rivian.png" alt="logo-rivian">
+            <span>Electric Cars</span>
+        </div>
+        <button class="menu-toggle">
+            <span class="menu-icon"></span>
+        </button>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Catálogo</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="filter">
+            <label for="sort">Ordenar Por:</label>
+            <select id="sort">
+                <option value="precio">Precio</option>
+            </select>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="assets/img/rivian-01.jpeg" alt="camioneta rivian de color gris">
+                <p>Model: rivian s2</p>
+                <button>Ver más</button>
+            </div>
+            <div class="product">
+                <img src="assets/img/rivian-02.jpg" alt="suv rivian de color blanco">
+                <p>Model: rivian s3</p>
+                <button>Ver más</button>
+            </div>
+            <div class="product">
+                <img src="assets/img/rivian-03.jpg" alt="camioneta rivian de color verde">
+                <p>Model: rivian s2</p>
+                <button>Ver más</button>
+            </div>
+        </div>
+        <div class="pagination">
+            <button>&laquo;</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>&raquo;</button>
+        </div>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
